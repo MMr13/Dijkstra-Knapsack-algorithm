@@ -1,0 +1,16 @@
+data(): #Reads the data_1.csv file and returns the list of employees along with their number.
+data2(): #Reads the data_2.csv file and returns a list of the beginning and end points of each task along with their number.
+label():  #Receives tasks list and through this networking list returns points (all nodes) as a dictionary ("mylabel2"), also numbers all nodes for later steps and returns as "mylabel".
+mat():  #Receives the label () outputs and returns the adjacency matrix for all nodes as output according to the problem assumptions.
+grid_show():  #Receives label () and mat () outputs and plots nodes and edges.
+start_target(m):  #This function takes the task number as an argument and returns the start and end points of each task according to the label () and data2 () functions.
+graph():  #This function takes the output mat () and converts the adjacency matrix to a dictionary to make the computation dijkstra easier to calculate.
+dijkstra(graph,task): #This function takes two dictionary arguments of the adjacency matrix (graph()) and the start and end points of each task (start_target (m)) and returns the shortest path using the dijkstra algorithm.
+plot_task(m): #This function contains an argument (number of each task) and after receiving the number of each task,plot shortest path.
+distance_tasks(): #This function uses the dijkstra function to calculate the shortest path for all tasks and returns the output as a list (where the index of each list is equal to the number of each task).
+time_tasks(v): #In this function, with help speed of the employees argument on the edge (10 feet per minute) returns the minimum time for all tasks as a list.
+Knapsack(employee_list,task_time_list): #This function distributes tasks to employees using the Knapsack algorithm. This function takes two arguments. One is the employee list and the other is the task list. And returns a dictionary output with the employee name as keys and the value of the task list.
+get_task_EMPLOYEE(q,r): #This function receives q as the output of the Knapsack and r as the to-do list, and uses these two numbers to find each task and return it as a list.
+plot_EMPLOYEE_Task(n):  #This function plots all the tasks that each employee does. The input argument of this function receives a truple (for example: (9,'IRVINE'))
+final_task_EMPLOYEES(): #This function prints all employees, the tasks assigned to it, as well as the total time spent on their tasks. It also saves the output text file.
+plot_for_all_EMPLOYEE():  #This is an optional function that draws and stores tasks for all employees.
